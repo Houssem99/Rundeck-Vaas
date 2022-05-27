@@ -14,7 +14,10 @@
     yum:
       name: nginx
       state: present
-
+  - name: Install ccze
+    yum:
+      name: ccze
+      state: present
   - name: Insert Index Page
     template:
       src: /etc/ansible/playbooks/index.html
